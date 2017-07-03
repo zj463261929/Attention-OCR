@@ -1,0 +1,7 @@
+1. 训练：train_demo.sh   （修改路径、batch_size等参数，注意：target-embedding-size与类别个数有关，是对类别索引重新编码）
+   word_label.txt 存放类别与其对应标签，该文件是通过wordFrequency/readData.py的cut_word_new()或cut_word_new_new()生成。
+   
+2. 测试：test_demo.sh   （有些参数需要与训练模型保持一致，比如attn-num-hidden）
+   字典矫正，需要通过语料库生成字典+词频（wordFrequency/readData.py的output_file()）
+
+  
